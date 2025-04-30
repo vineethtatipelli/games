@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <marquee class="marq1" behavior="" direction="left">
+      <div class="rule">First one to score 100 is the Winner🎉</div>
+    </marquee>
+    <section class="player player1 player-active">
+      <p class="win hidden win1">Congratulations!! You win🎉</p>
+      <h2 class="playername" id="player1">Player 1</h2>
+      <p class="score" id="score1">45</p>
+      <div class="currentbox">
+        <h2 class="currentScoreLabel">Current Score</h2>
+        <p class="currentScore" id="current1">0</p>
+      </div>
+    </section>
+    <section class="player player2">
+      <p class="win hidden win2">Congratulations!! You win🎉</p>
+      <h2 class="playername" id="player2">Player 2</h2>
+      <p class="score" id="score2">56</p>
+      <div class="currentbox">
+        <h2 class="currentScoreLabel">Current Score</h2>
+        <p class="currentScore" id="current2">0</p>
+      </div>
+    </section>
+    <img src="2.png" alt="Playing dice" class="dice-img" width="120vw" />
+    <button class="btn btn-new">🔃New game</button>
+    <button class="btn btn-roll">🎲Roll the dice</button>
+    <button class="btn btn-hold">📥Hold</button>
+    <marquee class="marq2" behavior="" direction="left">
+      <div class="hope">Hope 1 doesn't come 😅</div>
+    </marquee>
+  </body>
+  <script src="script.js"></script>
+</html>

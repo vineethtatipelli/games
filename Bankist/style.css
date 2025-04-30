@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+
+body {
+  background-color: #dad3d3;
+}
+
+.welcome {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.hidden {
+  /* display: none; */
+  opacity: 0;
+}
+
+.login_input {
+  border-radius: 1rem;
+  border: 2px solid black;
+  height: 2rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: black;
+  background-color: rgb(203, 197, 192);
+}
+
+.login_button {
+  width: 4rem;
+  height: 2rem;
+  border: 1px solid #dad3d3;
+  background-color: #dad3d3;
+  cursor: pointer;
+}
+
+.login_button:hover {
+  font-size: 2rem;
+}
+
+.login_input:focus {
+  background-color: rgb(238, 227, 224);
+}
+
+.balance_current {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 19rem 3rem 19rem;
+}
+
+.balance_value {
+  font-size: 3rem;
+}
+
+.balance_current_date {
+  font-size: 1.3rem;
+}
+
+.movements {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  width: 35rem;
+  margin-left: 19rem;
+  /* overflow: auto; */
+  overflow-y: scroll;
+  height: 29rem;
+  border-radius: 8px;
+}
+
+.movements_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 0.5px solid black;
+  height: 3rem;
+  border-radius: 2px;
+}
+
+.movements_type--deposit {
+  background-color: rgb(64, 148, 64);
+  font-size: 1.3rem;
+  height: 1.3rem;
+  width: auto;
+  padding: 0rem 0.5rem;
+  margin: 1rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.movements_type--withdraw {
+  background-color: red;
+  font-size: 1.3rem;
+  height: 1.3rem;
+  width: auto;
+  padding: 0rem 0.5rem;
+  margin: 1rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.movements_date {
+  display: none;
+  font-size: 1.2rem;
+}
+
+.movements_value {
+  font-size: 1.5rem;
+  margin-top: 0.8rem;
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 19rem;
+  justify-content: space-between;
+  width: 35rem;
+}
+
+.in {
+  font-size: 1.3rem;
+  /* padding: 0rem 1rem; */
+  padding-top: 0.3rem;
+}
+
+.in_value {
+  color: green;
+  font-size: 2rem;
+}
+
+.out {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+
+.out_value {
+  color: red;
+  font-size: 2rem;
+}
+
+.interest {
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+
+.interest_value {
+  color: green;
+  font-size: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.sort_button {
+  height: 2.4rem;
+  border-color: #f3f3f3;
+  padding: 0rem 1rem;
+  font-size: 1.4rem;
+  margin-right: 0.3rem;
+}
+
+.sort_button:hover {
+  font-size: 2rem;
+  margin-right: 0rem;
+}
+
+.form1 {
+  display: flex;
+  flex-direction: row;
+}
+.operation_transfer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to top left,
+    rgb(165, 148, 20),
+    rgb(204, 199, 90)
+  );
+  width: 30rem;
+  height: 9rem;
+  border-radius: 4px;
+  position: relative;
+  bottom: 36rem;
+  left: 56rem;
+}
+
+label {
+  font-size: 1.3rem;
+  margin: 0.2rem;
+}
+
+.to {
+  width: 5rem;
+  border-radius: 6px;
+  height: 1.4rem;
+  margin-right: 2rem;
+}
+
+.transfer_amount {
+  width: 7rem;
+  border-radius: 6px;
+  height: 1.4rem;
+}
+
+h2 {
+  padding-bottom: 3rem;
+}
+
+.transfer_button {
+  margin-left: 2rem;
+  font-size: 2rem;
+  width: 3rem;
+  height: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.transfer_button:hover {
+  width: 4rem;
+}
+
+.operation--loan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to top left,
+    rgb(66, 223, 118),
+    rgb(7, 167, 53)
+  );
+  width: 30rem;
+  height: 9rem;
+  border-radius: 4px;
+  position: relative;
+  bottom: 35.2rem;
+  left: 56rem;
+}
+
+.loan_button {
+  margin-left: 2rem;
+  font-size: 2rem;
+  width: 3rem;
+  height: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.loan_button:hover {
+  width: 4rem;
+}
+
+.loan_amount {
+  width: 7rem;
+  border-radius: 6px;
+  height: 1.4rem;
+}
+
+.operation--close_account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to top left,
+    rgb(227, 63, 63),
+    rgb(191, 73, 73)
+  );
+  width: 30rem;
+  height: 9rem;
+  border-radius: 4px;
+  position: relative;
+  bottom: 34rem;
+  left: 56rem;
+}
+
+.confirm_user {
+  width: 8rem;
+  border-radius: 6px;
+  height: 1.4rem;
+}
+
+.confirm_pin {
+  width: 6rem;
+  border-radius: 6px;
+  height: 1.4rem;
+  margin-left: 2rem;
+}
+
+.close_account_button {
+  margin-left: 2rem;
+  font-size: 2rem;
+  width: 3rem;
+  height: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.close_account_button:hover {
+  width: 4rem;
+}
+
+.logout_timer {
+  position: relative;
+  bottom: 31rem;
+  left: 60rem;
+  font-size: 1.2rem;
+}

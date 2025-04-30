@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankist</title>
+    <link rel="shortcut icon" href="logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="welcome">Login to get started</div>
+        <img src="logo.png" alt="logo" class="logo" />
+        <form action="" class="login">
+          <input
+            type="text"
+            placeholder="user"
+            name="login_input_user"
+            class="login_input login_input_user"
+          />
+          <input
+            type="password"
+            placeholder="password"
+            name="login_input_password"
+            class="login_input login_input_password"
+          />
+          <button class="login_button">&RightArrow;</button>
+        </form>
+      </nav>
+      <hr />
+    </header>
+    <main class="app hidden">
+      <div class="balance_current">
+        <div class="balance_current_date">
+          <div class="current">Current balance</div>
+          <div class="date">As of <span class="date1">12/02/2023</span></div>
+        </div>
+        <div class="balance_value">$34000</div>
+      </div>
+      <div class="movements">
+        <div class="movements_row">
+          <div class="movements_type movements_type--deposit">3 deposit</div>
+          <div class="movements_date">3 days ago</div>
+          <div class="movements_value">$3000</div>
+        </div>
+        <div class="movements_row">
+          <div class="movements_type movements_type--withdraw">3 withdraw</div>
+          <div class="movements_date">3 days ago</div>
+          <div class="movements_value">-$3000</div>
+        </div>
+      </div>
+      <div class="summary">
+        <div class="in">In</div>
+        <div class="in_value">$1234</div>
+        <div class="out">Out</div>
+        <div class="out_value">$123</div>
+        <div class="interest">Interest</div>
+        <div class="interest_value">$23</div>
+        <button class="sort_button">&DownArrow; Sort</button>
+      </div>
+      <div class="operation operation_transfer">
+        <h2>Transfer Money</h2>
+        <form action="" class="form1 form--transfer">
+          <!-- <label for="to">Transfer to</label> -->
+          <input
+            type="text"
+            name="to"
+            class="to form_input"
+            placeholder="Transfer to"
+          />
+          <!-- <label for="transfer_amount">Amount</label> -->
+          <input
+            type="number"
+            name="transfer_amount"
+            class="transfer_amount form_input"
+            placeholder="Amount"
+          />
+          <button class="transfer_button">&RightArrowBar;</button>
+        </form>
+      </div>
+      <div class="operation operation--loan">
+        <h2>Request Loan</h2>
+        <form action="" class="form1 form--loan">
+          <!-- <label for="loan_amount">Amount</label> -->
+          <input
+            type="number"
+            name="loan_amount"
+            class="loan_amount"
+            placeholder="Amount"
+          />
+          <button class="loan_button">&RightArrowBar;</button>
+        </form>
+      </div>
+      <div class="operation operation--close_account">
+        <h2>Close Account</h2>
+        <form action="" class="form1 form--close_account">
+          <!-- <label for="confirm_user">Confirm User</label> -->
+          <input
+            type="text"
+            name="confirm_user"
+            class="confirm_user"
+            placeholder="Confirm User"
+          />
+          <!-- <label for="confirm_pin">Confirm Pin</label> -->
+          <input
+            type="password"
+            name="confirm_pin"
+            class="confirm_pin"
+            placeholder="Confirm pin"
+          />
+          <button class="close_account_button">&RightArrowBar;</button>
+        </form>
+      </div>
+      <div class="logout_timer">
+        <p class="logout_para">
+          You will be logged out in <span class="timer">05:00</span>
+        </p>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

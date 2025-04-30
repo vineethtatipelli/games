@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="initial">
+      <button class="again">Again!</button>
+      <span class="between">(Between 1 and 20)</span>
+    </div>
+    <div class="guess">
+      <h1>Guess My Number!</h1>
+    </div>
+    <div class="rules">
+      <p>
+        Intially you are given a score of 20 and decreased by 1 for every wrong
+        guess X
+      </p>
+    </div>
+    <div class="number"><p>?</p></div>
+
+    <!-- <div class="questionmarkImage">
+      <img class="img1" src="download (1).jpeg" alt="" />
+      <img class="img2" src="download.jpeg" alt="" />
+      <img class="img3" src="download2.jpeg" alt="" />
+    </div> -->
+    <div class="guessline">
+      <p>Start guessing....</p>
+    </div>
+    <div class="box1">
+      <span class="enter">
+        <label for="guessedvalue">Enter the number between 1 and 20</label>
+        <input
+          type="number"
+          id="guessedvalue"
+          class="guessedvalue"
+          name="guessedvalue"
+          min="1"
+          max="20"
+        />
+        <button class="check">Check!</button>
+      </span>
+    </div>
+    <span class="score">
+      <p>Your score: <span class="yourscore">20</span></p>
+      <p>Highscore: <span class="highscore">0</span></p>
+    </span>
+    <script src="script.js"></script>
+  </body>
+</html>

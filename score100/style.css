@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(
+    to left top,
+    rgb(102, 83, 207),
+    rgb(195, 112, 145)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main {
+  display: flex;
+  position: relative;
+  height: 100rem;
+  width: 75rem;
+  background-color: rgb(234, 11, 11);
+  border-radius: 10px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  filter: blur();
+  backdrop-filter: blur(200px);
+  overflow: hidden;
+} */
+
+.marq1 {
+  position: absolute;
+  top: 1rem;
+}
+
+.marq2 {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.win {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 25rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.player {
+  width: 40vw;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.playername {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 5rem;
+  font-weight: 200;
+  margin-bottom: 10rem;
+}
+
+.player-active {
+  /* background-color: rgba(153, 53, 164, 0.477); */
+  background-color: rgb(183, 49, 183);
+}
+
+.player-active .playername {
+  font-weight: 900;
+}
+
+.player-active .score {
+  font-weight: 900;
+}
+
+.player-active .current {
+  opacity: 1;
+}
+
+.currentbox {
+  background-color: rgb(213, 206, 197);
+  border-radius: 5px;
+  width: 65%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.currentScoreLabel {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.currentScore {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-size: 2.1rem;
+  font-family: inherit;
+  background-color: rgb(157, 168, 222);
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0 0.5rem;
+}
+
+.btn-new {
+  top: 4.5rem;
+}
+
+.btn-roll {
+  top: 35rem;
+}
+
+.btn-hold {
+  top: 39rem;
+}
+
+.dice-img {
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  top: 20rem;
+}
